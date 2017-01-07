@@ -25,10 +25,10 @@
 /** The index of the view controller associated with the currently selected tab item. */
 @property (nonatomic, assign) NSUInteger selectedIndex;
 /** The view controller associated with the currently selected tab item. */
-@property (nonatomic, unsafe_unretained) UIViewController *selectedViewController;
+@property (nonatomic, weak) UIViewController *selectedViewController;
 
 /** The tab bar controller’s delegate object. */
-@property (nonatomic, unsafe_unretained) id<NGTabBarControllerDelegate> delegate;
+@property (nonatomic, weak) id<NGTabBarControllerDelegate> delegate;
 
 /** The tableView used to display all tab bar elements */
 @property (nonatomic, strong, readonly) NGTabBar *tabBar;
